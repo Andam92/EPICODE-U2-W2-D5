@@ -69,6 +69,7 @@ main .hero-image {
   background-image: url("https://thumbs.dreamstime.com/b/fountain-pen-ink-white-paper-background-fountain-pen-ink-white-paper-background-white-background-169437415.jpg");
   background-color: #cccccc;
   height: 70vh;
+  box-shadow: 10px 8px 15px 1px rgb(94, 94, 94);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -138,6 +139,16 @@ main .testimonianze p {
 main .testimonianze p {
   font-family: "Great Vibes", cursive;
 }
+@media screen and (max-width: 945px) {
+  main .testimonianze {
+    display: none;
+  }
+}
+@media screen and (max-width: 945px) {
+  main #testimonianze-h {
+    display: none;
+  }
+}
 main img {
   border-radius: 0%;
 }
@@ -156,6 +167,15 @@ footer ul {
   justify-content: space-around;
   list-style-type: none;
 }
+@media screen and (max-width: 770px) {
+  footer ul {
+    flex-direction: column;
+    text-align: start;
+  }
+}
+footer ul .footer-list {
+  display: flex;
+}
 footer ul li {
   margin: 0 30px;
 }
@@ -164,6 +184,10 @@ footer ul li:nth-child(3) {
 }
 footer ul li a {
   text-decoration: none;
+}
+footer ul li i {
+  color: ivory;
+  margin-left: 1em;
 }
 footer p {
   color: ivory;

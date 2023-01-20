@@ -8,6 +8,7 @@ main {
     background-image: url("https://thumbs.dreamstime.com/b/fountain-pen-ink-white-paper-background-fountain-pen-ink-white-paper-background-white-background-169437415.jpg");
     background-color: #cccccc;
     height: 70vh;
+    box-shadow: 10px 8px 15px 1px rgb(94, 94, 94);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -72,6 +73,14 @@ main {
     }
     p {
       font-family: $secondary-font;
+    }
+    @media screen and(max-width:945px) {
+      display: none;
+    }
+  }
+  #testimonianze-h {
+    @media screen and(max-width:945px) {
+      display: none;
     }
   }
   img {

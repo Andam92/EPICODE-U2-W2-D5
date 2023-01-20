@@ -10,6 +10,13 @@ footer {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
+    @media screen and (max-width: 770px) {
+      flex-direction: column;
+      text-align: start;
+    }
+    .footer-list {
+      display: flex;
+    }
     li {
       margin: 0 30px;
       &:nth-child(3) {
@@ -17,6 +24,10 @@ footer {
       }
       a {
         text-decoration: none;
+      }
+      i {
+        color: $secondary-color;
+        margin-left: 1em;
       }
     }
   }

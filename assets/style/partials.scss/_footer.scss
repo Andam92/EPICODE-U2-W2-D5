@@ -11,14 +11,23 @@ footer {
     justify-content: space-around;
     list-style-type: none;
     @media screen and (max-width: 770px) {
+      align-items: center;
       flex-direction: column;
-      text-align: start;
+      text-align: center;
+      padding: 0;
     }
     .footer-list {
       display: flex;
+      @media screen and (max-width: 770px) {
+        flex-direction: column;
+        text-align: center;
+      }
     }
     li {
       margin: 0 30px;
+      @media screen and (max-width: 770px) {
+        margin: 10px 0;
+      }
       &:nth-child(3) {
         font-family: $primary-font;
       }
